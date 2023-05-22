@@ -1,4 +1,4 @@
-## coding-challenge
+## frontend-coding-challenge
 
 copy `.env.example` to `.env.local` and set your environment variables
 
