@@ -2,13 +2,11 @@ import { useState } from "react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import { useFetchData } from "./hooks";
 
-let CENTER = {
-  lat: 51.505,
-  lng: -0.09,
-};
-
 const App = () => {
-  const [center, setCenter] = useState(CENTER);
+  const [center, setCenter] = useState({
+    lat: 51.505,
+    lng: -0.09,
+  });
 
   const { data, loading } = useFetchData(center);
 
